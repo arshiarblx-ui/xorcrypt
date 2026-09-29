@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <direct.h> 
 #include <string.h>
 
 static void readLine(const char *prompt , char *buf , size_t size){
