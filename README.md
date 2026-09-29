@@ -1,4 +1,3 @@
-# xorcrypt
 # XOR File Encryptor
 
 A simple command-line tool written in C that encrypts and decrypts any file
@@ -54,3 +53,25 @@ Enter output filename: secret.enc
 Enter password: mypassword
 Done.
 ```
+
+To decrypt, choose `2` and use the encrypted file as input with the **same password**.
+
+> Note: a wrong password does not show an error. It produces an unreadable output file.
+
+## What I learned
+
+- File I/O in C (`fopen`, `fgetc`, `fputc`, binary mode)
+- Safe input handling with `fgets`
+- Bitwise XOR and why it is reversible
+- Why simple ciphers are not secure
+
+## Possible improvements
+
+- Detect a wrong password (store a magic header in the encrypted file)
+- Command-line arguments instead of interactive prompts
+- Hide the password while typing
+- Use a real cryptography library (e.g. libsodium) for secure encryption
+
+## License
+
+MIT
